@@ -1,0 +1,75 @@
+{{#each tab}}
+<div class="wrapper">
+    <div class="box">
+        <div class="text-box">
+            <span>{{text_statut}}</span>
+        </div>
+        <div class="privacy">
+            <h6>{{nom_statut}}</h6><br>
+            <h6>{{temp_statut}}</h6>
+        </div>
+    </div>
+</div>
+
+{{/each}}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #1da1f2;
+    }
+
+    .wrapper {
+        background: #fff;
+        max-width: 475px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 25px 25px 15px 25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 40%;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .box {
+        padding-top: 10px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .box .tweet-box {
+        position: relative;
+        min-height: 130px;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .box .privacy {
+        color: #1da1f2;
+        margin: 15px 0;
+        display: block;
+        align-items: center;
+        padding: 7px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+
+    .privacy h6 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 7px;
+
+    }
+</style>
